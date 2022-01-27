@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block and Inline</title>
+    <style>
+      address {
+        box-sizing: border-box;
+        margin: 100px;
+        padding: 50px;
+        border: 15px solid hotpink;
+        outline: 15px solid lightseagreen;
+      }
+      article {
+        margin: 50px;
+        padding: 50px;
+        border: 5px dashed lightgreen;
+        outline: 15px double firebrick;
+        background-color: grey;
+      }
+      aside {
+        margin: 50px;
+        padding: 50px;
+        background-color: indianred;
+        outline: 10px dotted lime;
+        border: 10px solid teal;
+        border-radius: 20px;
+      }
+      blockquote {
+        width: 400px;
+        margin: 0 auto;
+        padding: 50px;
+        background-color: indianred;
+        outline: 10px groove lime;
+        border: 10px solid teal;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <address style="background-color: darkslateblue; text-align: justify">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo minus porro
+      animi aliquid repellendus, ab perspiciatis debitis cumque maxime,
+      recusandae ad veritatis optio rem cupiditate doloribus unde. Eligendi
+      facilis est enim commodi fugiat amet alias aspernatur pariatur ipsum! Fuga
+      dolor at quas expedita, quia ut ad nemo provident, saepe quae obcaecati.
+      Quae aliquam omnis, in aut quasi consequuntur repellat optio error
+      incidunt harum rerum. Incidunt provident aperiam cumque veniam inventore
+      alias dolore necessitatibus impedit, porro libero, natus, tempore neque
+      explicabo delectus? Tempora quia dolorum aliquam accusantium, molestias
+      laboriosam ex quasi fugit deserunt illum quo voluptatem incidunt sequi
+      maiores saepe tenetur.
+    </address>
+    <hr style="border: 10px solid gold" />
+    <article>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nisi eos
+      tenetur placeat dignissimos omnis maxime officia quae, rerum reprehenderit
+      nobis repellendus laboriosam fugiat explicabo pariatur exercitationem
+      dolorum magnam perspiciatis ipsa mollitia officiis molestiae aliquid eius?
+      Accusamus doloribus deleniti sed. Tenetur, aspernatur commodi. Minima vero
+      libero, voluptate cupiditate amet fuga, repellat sit excepturi assumenda
+      odit at illo nihil? Eos quae quia omnis exercitationem ut earum magnam,
+      natus optio id incidunt debitis fuga quo ipsum, provident distinctio
+      deserunt in ipsa alias cum suscipit culpa nam explicabo! Aliquam eos
+      dolores illo incidunt nam, consequuntur nesciunt. Enim suscipit odit
+      ducimus, tenetur in voluptate!
+    </article>
+
+    <hr style="border: 10px solid gold" />
+
+    <aside>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam labore
+      eius fugit? Perspiciatis cumque ut quia minus voluptatibus dolorum
+      recusandae dicta et sint veritatis iste incidunt maxime labore fugiat
+      officia consequuntur deleniti, itaque vero aliquid iure cupiditate! Culpa
+      dolore illum officiis non iusto deserunt illo totam magnam aliquid.
+      Tempora deserunt, quia consequatur quasi quisquam magni a laborum
+      assumenda architecto minus iure aspernatur repellat at, quos quod quidem
+      hic reiciendis? Perferendis pariatur quas quaerat dignissimos? Sequi amet
+      fuga dignissimos modi soluta esse ut, corrupti rem quos ex ullam?
+      Explicabo minima quis nemo, maiores fugiat ex fuga ea cupiditate, magnam
+      blanditiis et.
+    </aside>
+    <hr style="border: 10px solid gold" />
+
+    <blockquote>
+      For 50 years, WWF has been protecting the future of nature. The world's
+      leading conservation organization, WWF works in 100 countries and is
+      supported by 1.2 million members in the United States and close to 5
+      million globally. Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Fugiat odio sed odit amet rem molestiae voluptatem asperiores
+      dignissimos alias officia eos nisi culpa magnam cupiditate quidem modi
+      laudantium distinctio consequatur perspiciatis sequi, nemo qui. Impedit,
+      enim suscipit? Doloremque minima voluptas repellat praesentium excepturi,
+      nam totam hic ex dicta possimus repellendus exercitationem officiis
+      eligendi. Possimus perferendis maiores in facere sequi assumenda aliquam
+      voluptatem ratione, reprehenderit quia iusto nam dicta eveniet consectetur
+      sit, at hic eligendi cum ea debitis earum laborum ducimus atque
+      temporibus! Totam similique vitae quis quibusdam a voluptatem itaque
+      alias, labore commodi non mollitia magnam saepe deserunt quos eligendi!
+    </blockquote>
+    <hr style="border: 10px solid gold" />
+
+    <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(0, 0, 80, 100);
+    </script>
+
+    <hr style="border: 10px solid gold" />
+
+    <!-- Description List is Block Level Element  -->
+    <dl>
+      <!-- Description Term is Block Level Element  -->
+      <dt>Coffee</dt>
+
+      <!-- Description Detail is Block Level Element -->
+      <dd>Black hot drink</dd>
+
+      <!-- Description Term is Block Level Element  -->
+      <dt>Milk</dt>
+
+      <!-- Description Detail is Block Level Element -->
+      <dd>White cold drink</dd>
+    </dl>
+
+    <hr style="border: 10px solid gold" />
+
+    <form>
+      <!-- Fieldset is a Block Level Element  -->
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+
+  <hr style="border: 10px solid gold" />
+  <!------------------------- Heading  ---------------->
+
+  <h1 style="background-color: brown">This is a block level element - 1</h1>
+  <h2 style="background-color: khaki">This is a block level element - 2</h2>
+  <h3 style="background-color: hotpink">This is a block level element - 3</h3>
+  <h4 style="background-color: forestgreen">
+    This is a block level element - 4
+  </h4>
+  <h5 style="background-color: honeydew">This is a block level element - 5</h5>
+  <h6 style="background-color: gray">This is a block level element - 6</h6>
+
+  <hr style="border: 10px solid gold" />
+
+  <figure>
+    <img src="person 1.png" alt="Trulli" style="width: 1fr" />
+    <figcaption>Person - 01</figcaption>
+  </figure>
+
+  <div>
+    <nav>
+      <ul>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+        <li>Link 5</li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            debitis ullam voluptate obcaecati aliquid accusamus incidunt maiores
+            quibusdam omnis similique error corrupti vel et rem quisquam, earum
+            dolorum illo quod recusandae tenetur pariatur nemo fugiat doloribus
+            officia. Voluptatibus libero inventore minima blanditiis doloribus
+            odio autem doloremque eum tenetur ducimus, recusandae officia iure
+            quibusdam cupiditate praesentium aliquid debitis aperiam vitae eos
+            ullam omnis perferendis placeat. Deserunt ratione omnis earum! Modi
+            aspernatur officiis possimus optio dolore quam dolor asperiores
+            corrupti dolores? Optio, officiis, molestias nemo voluptas omnis ex
+            repellendus ipsam libero harum adipisci, saepe voluptatem aspernatur
+            ducimus ullam rerum vero. Voluptate, ex!
+          </p>
+        </article>
+        <aside>
+          <table>
+            <thead>
+              <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+                <th>Header 5</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+                <td>Table Data 3</td>
+                <td>Table Data 4</td>
+                <td>Table Data 5</td>
+              </tr>
+
+              <tr>
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+                <td>Table Data 3</td>
+                <td>Table Data 4</td>
+                <td>Table Data 5</td>
+              </tr>
+
+              <tr>
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+                <td>Table Data 3</td>
+                <td>Table Data 4</td>
+                <td>Table Data 5</td>
+              </tr>
+
+              <tr>
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+                <td>Table Data 3</td>
+                <td>Table Data 4</td>
+                <td>Table Data 5</td>
+              </tr>
+            </tbody>
+          </table>
+        </aside>
+      </section>
+    </main>
+
+    <footer></footer>
+  </div>
+</html>

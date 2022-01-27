@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+
+    <style>
+      .Container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+      }
+      .Container header {
+        grid-column: 1 / span 3;
+        text-align: center;
+        background-color: darkcyan;
+      }
+      .Container nav {
+        grid-column-start: 3;
+        grid-column-end: span 6;
+      }
+      .Container nav ul{
+          text-align: center;
+      }
+      .Container nav ul li {
+        display: inline;
+        background-color: cornflowerblue;
+        padding: 10px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <header>
+        <h1>Welcome to My Website</h1>
+      </header>
+      <nav>
+        <ul>
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+          <li>Link 4</li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            ut!
+          </p>
+        </div>
+        <div class="box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            ut!
+          </p>
+        </div>
+        <div class="box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            ut!
+          </p>
+        </div>
+        <div class="box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            ut!
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

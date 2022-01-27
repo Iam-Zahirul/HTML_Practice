@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+    <link rel="shortcut icon" href="Table.svg" type="image/x-icon" />
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <caption>
+        <b>Table - 01</b>
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Designation</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Alex Adam</td>
+          <td>101</td>
+          <td>CEO</td>
+          <td>$4000</td>
+        </tr>
+
+        <tr>
+          <td>Ibrahim</td>
+          <td>102</td>
+          <td>Chief Engineer</td>
+          <td>$3500</td>
+        </tr>
+
+        <tr>
+          <td>Jakaria</td>
+          <td>103</td>
+          <td>Engineer</td>
+          <td>$3000</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- ----------------------------------------------- -->
+    <hr />
+    <table>
+      <caption>
+        <b>Table - 02</b>
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="2">Assignment 1</th>
+          <th>Assignment 2</th>
+          <th>Assignment 3</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Submitted 1</td>
+          <td>Submitted 2</td>
+          <td>Submitted 3</td>
+          <td>Submitted 4</td>
+        </tr>
+        <tr>
+          <td>Submitted 1</td>
+          <td>Submitted 2</td>
+          <td>Submitted 3</td>
+          <td>Submitted 4</td>
+        </tr>
+        <tr>
+          <td>Submitted 1</td>
+          <td>Submitted 2</td>
+          <td>Submitted 3</td>
+          <td>Submitted 4</td>
+        </tr>
+        <tr>
+          <td>Submitted 1</td>
+          <td>Submitted 2</td>
+          <td>Submitted 3</td>
+          <td>Submitted 4</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- -------------------------------------- -->
+    <hr />
+    <table>
+      <caption>
+        Table - 03
+      </caption>
+
+      <tr>
+        <th rowspan="3">Person</th>
+        <th>Person - 1</th>
+        <th>Person - 2</th>
+      </tr>
+
+      <tr>
+        <td>Kamal</td>
+        <td>Zahirul</td>
+      </tr>
+      <tr>
+        <td>Zahir</td>
+        <td>Mahir</td>
+      </tr>
+    </table>
+    <!-- -------------------------- -->
+    <hr />
+    <table>
+      <caption>
+        Table - 03
+      </caption>
+
+      <tr>
+        <th>Product 1</th>
+        <th colspan="2">Product 2</th>
+        <th>Product 3</th>
+      </tr>
+
+      <tr>
+        <td>Item-1</td>
+        <td>Item-2</td>
+        <td>Item-3</td>
+        <td>Item-4</td>
+      </tr>
+      <tr>
+        <td>Item-1</td>
+        <td>Item-2</td>
+        <td>Item-3</td>
+        <td>Item-4</td>
+      </tr>
+      <tr>
+        <td>Item-1</td>
+        <td>Item-2</td>
+        <td>Item-3</td>
+        <td>Item-4</td>
+      </tr>
+    </table>
+    <!-- -------------------------------- -->
+    <hr />
+    <table>
+      <caption>
+        Table - 04
+      </caption>
+      <tr>
+        <th>PC-1</th>
+        <th>PC-2</th>
+        <th>PC-3</th>
+        <th>PC-4</th>
+        <th>PC-5</th>
+      </tr>
+
+      <tr>
+        <td>RAM - 1GB</td>
+        <td>RAM - 2GB</td>
+        <td>RAM - 3GB</td>
+        <td>RAM - 4GB</td>
+        <td>RAM - 5GB</td>
+      </tr>
+
+      <tr>
+        <td>ROM - 501</td>
+        <td>ROM - 502</td>
+        <td>ROM - 503</td>
+        <td>ROM - 504</td>
+        <td>ROM - 505</td>
+      </tr>
+    </table>
+    <!-- ---------------------------------- -->
+    <hr />
+    <table>
+      <caption>
+        Table - 05
+      </caption>
+      <tr>
+        <th colspan="2">Mobile-1</th>
+        <th>Mobile-2</th>
+        <th>Mobile-3</th>
+        <th>Mobile-4</th>
+        <th>Mobile-5</th>
+      </tr>
+
+      <tr>
+        <td>iPhone</td>
+        <td>Samsung</td>
+        <td>Huwei</td>
+        <td>Nokia</td>
+        <td>Lenovo</td>
+        <td>Redmi</td>
+      </tr>
+
+      <tr>
+        <td>iPhone</td>
+        <td>Samsung</td>
+        <td>Huwei</td>
+        <td>Nokia</td>
+        <td>Lenovo</td>
+        <td>Redmi</td>
+      </tr>
+    </table>
+    <!-- ------------------------------ -->
+    <hr />
+    <table>
+      <caption>
+        Table - 6
+      </caption>
+      <thead>
+        <tr>
+          <th>First Column</th>
+          <th>Second Column</th>
+          <th>Third Column</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>I</td>
+          <td rowspan="2">am</td>
+          <td>student.</td>
+        </tr>
+
+        <tr>
+          <td>You</td>
+          <td>teacher.</td>
+        </tr>
+
+        <tr>
+          <td>She</td>
+          <td rowspan="2">are</td>
+          <td>Proffessior</td>
+        </tr>
+
+        <tr>
+          <td>He</td>
+          <td>IT Specialist.</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
